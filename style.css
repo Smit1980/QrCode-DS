@@ -13,7 +13,7 @@ header {
 }
 
 #name {
-    font-size: 24px;
+    font-size: 1.5em; /* Адаптивный размер */
 }
 
 main {
@@ -24,24 +24,28 @@ main {
 #text-container {
     white-space: pre-wrap;
     text-align: left;
+    padding: 10px;
 }
 
 /* Стили для мобильных устройств */
 @media (max-width: 600px) {
     #text-container {
-        font-size: 14px; /* Меньший размер шрифта для мобильных устройств */
-        padding: 10px; /* Отступы для текста */
+        font-size: 3vw; /* Процент от ширины экрана */
     }
 
     #name {
-        font-size: 20px; /* Меньший размер заголовка для мобильных устройств */
+        font-size: 5vw;
     }
 }
 
 /* Стили для планшетов и настольных компьютеров */
 @media (min-width: 601px) {
     #text-container {
-        font-size: 16px; /* Больший размер шрифта для больших экранов */
-        padding: 15px; /* Отступы для текста */
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    #name {
+        font-size: 24px;
     }
 }
